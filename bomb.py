@@ -29,8 +29,8 @@ class Bomb:
                 self.sprites.append(button)
 
     def getevents(self):
-        for event in self.pygame.event.get(): # User did something
-            if event.type == self.pygame.QUIT: # If user clicked close
+        for event in self.pygame.event.get():
+            if event.type == self.pygame.QUIT:
                 return False
             elif event.type == self.pygame.MOUSEBUTTONUP:
                 pos = self.pygame.mouse.get_pos()

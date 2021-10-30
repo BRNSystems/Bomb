@@ -13,13 +13,10 @@ clock = pygame.time.Clock()
 bomb = Bomb(pygame, screen)
 
 while True:
-
     bomb.drawstuff()
-    
     bomb.ticktimer += clock.tick(60)
     bomb.beep()
     if bomb.getevents() == False:
         break
  
-#Once we have exited the main program loop we can stop the game engine:
 pygame.quit()
